@@ -1,0 +1,95 @@
+*{box-sizing: border-box;}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; 
+line-height: 1.6; 
+background: linear-gradient(90deg,rgba(87, 199, 133, 1) 1%, rgba(42, 123, 155, 1) 100%, rgba(87, 199, 133, 1) 100%);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+#hero-title{
+  margin-top: 100px;
+  color: #124863;
+  font-size: 1.5rem;
+  text-align: center;
+
+}
+#input-button-div {
+  
+  flex-direction: column;
+  margin: 20px;
+  min-width: 250px;
+  min-height: 50px;
+  max-width: 50%;
+  max-height: 50%;
+  background: #2A7B9B;
+  border: 2px solid rgba(237, 221, 83, 1);
+  color: rgba(237, 221, 83, 1);
+
+
+  /* Zentrierung mit Flexbox */
+ 
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertikal */
+  text-align: center;
+  text-transform: uppercase;
+}
+#number{
+ margin: 5px;
+ background: #2A7B9B;
+ height: 2.5rem;
+ width: 90%;
+ border: 1px inset rgba(237, 221, 83, 1);
+ background-color: #124863;
+ color:rgba(237, 221, 83, 1);
+ font-size: 1.3rem;
+}
+input::placeholder {
+  color: rgba(237, 221, 83, 1);         /* Textfarbe */
+  opacity: 1;          /* Standard ist oft 0.54 – hier volle Deckkraft */
+  font-style: italic;  /* optional: Kursiv */
+}
+#convert-btn{
+width: 90%;
+height: 2.5rem;
+font-size: 1.2rem;
+font-weight: bold;
+color: #124863;
+border: 1px solid rgba(237, 221, 83, 1);
+border-radius: 5px;
+margin: 5px;
+background-color: rgba(237, 221, 83, 1);
+cursor: pointer;
+
+  /* Animationseigenschaften */
+transition: all 0.3s ease;
+
+  /* Optional: leichter Schatten */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#convert-btn:hover{
+  transform: translateY(-3px) scale(1.05); /* leicht anheben + größer */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);   /* stärkerer Schatten */
+  background: linear-gradient(135deg, #5EC8E5, #2A7B9B); /* Verlauf umdrehen */
+}
+
+#output{
+  
+  min-width: 250px;
+  min-height: 50px;
+  max-width: 50%;
+  max-height: 50%;
+  background: #2A7B9B;
+border: 2px, dotted, rgba(237, 221, 83, 1);
+/* Zentrierung mit Flexbox */
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertikal */
+  text-align: center;
+  color: rgba(237, 221, 83, 1);
+}
